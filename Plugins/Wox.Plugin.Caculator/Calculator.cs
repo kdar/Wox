@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -15,7 +15,7 @@ namespace Wox.Plugin.Caculator
                         @"eigval|eigvec|eig|sum|polar|plot|round|sort|real|zeta|" +
                         @"bin2dec|hex2dec|oct2dec|" +
                         @"==|~=|&&|\|\||" +
-                        @"[ei]|[0-9]|[\+\-\*\/\^\., ""]|[\(\)\|\!\[\]]" +
+                        @"[ei]|[0-9]|[\%\+\-\*\/\^\., ""]|[\(\)\|\!\[\]]" +
                         @")+$", RegexOptions.Compiled);
         private static Regex regBrackets = new Regex(@"[\(\)\[\]]", RegexOptions.Compiled);
         private static ParseContext yampContext = null;
